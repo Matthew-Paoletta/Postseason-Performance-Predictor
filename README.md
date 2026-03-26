@@ -60,10 +60,10 @@ Based on our exploratory data analysis and predictive modeling, we identified th
 
 ### Visualizing the Impact
 
-![Category Impact on World Series Success](assets/category_impact.png)
+![Category Impact on World Series Success]("Postseason Performance Predictor image1.png")
 *Figure 1: Category Impact on World Series Success. Batting contributes the highest total points, but Pitching imposes the strictest average threshold.*
 
-![Logistic Regression Feature Importance](assets/logistic_regression.png)
+![Logistic Regression Feature Importance]("Postseason Performance Predictor image2.png")
 *Figure 2: Logistic Regression showing K-Fold CV Accuracy and Feature Importance, highlighting the heavy weight of pitching metrics like ERA.*
 
 For a detailed walkthrough of the project, including code and outputs, refer to the `Project_Documentation.ipynb` file in this repository.
