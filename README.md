@@ -47,11 +47,24 @@ The analysis is driven by multiple statistical and machine learning approaches, 
 
 ---
 
-## Expected Outcomes and Conclusions
-From our analysis, the following are anticipated:
-- Identification of key performance indicators (KPIs) leading to player and team success.
-- Insights into historical trends and how external factors correlate with performance metrics.
-- A robust predictive model to estimate future game or season performances.
+## 🏆 Key Findings: Predictive Statistics for Pennant Winners
+Based on our exploratory data analysis and predictive modeling, we identified the key statistical thresholds required for a team to secure a pennant. Interestingly, pitching and run prevention hold stricter thresholds for success than pure batting metrics.
+
+| Statistic | Category | Importance & Findings |
+| :--- | :--- | :--- |
+| **Wins / Win-Loss %** | Team Record | **Highest** - No pennant winner has ever ranked below 13th in the league. |
+| **ERA / WHIP** | Pitching | **High** - Elite pitching is heavily required; no pennant winner ranked worse than 11th-12th. |
+| **OBP** | Batting | **Moderate** - Strong positive correlation (Linear regression weight = +0.066). |
+| **RA/G** | Defense | **Moderate** - Displays strong threshold requirements for postseason advancement. |
+| **OPS+** | Batting | **Lower** - More forgiving thresholds (teams ranking as low as 24th have won pennants). |
+
+### Visualizing the Impact
+
+![Category Impact on World Series Success](assets/category_impact.png)
+*Figure 1: Category Impact on World Series Success. Batting contributes the highest total points, but Pitching imposes the strictest average threshold.*
+
+![Logistic Regression Feature Importance](assets/logistic_regression.png)
+*Figure 2: Logistic Regression showing K-Fold CV Accuracy and Feature Importance, highlighting the heavy weight of pitching metrics like ERA.*
 
 For a detailed walkthrough of the project, including code and outputs, refer to the `Project_Documentation.ipynb` file in this repository.
 
